@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Diwali Wishes</title>
+
+  <meta name="description" content="Send personalized Diwali wishes and share on WhatsApp!" />
+  <meta property="og:title" content="Happy Diwali Wishes" />
+  <meta property="og:description" content="Send personalized Diwali wishes and share on WhatsApp!" />
+  <!-- /<meta property="og:image" content="https://sharehit.in/diwali-og-image.jpg" /> -->
+  <meta property="og:url" content="https://chat.whatsapp.com/DtJSsOKSb0L592l9sMFLyG" />
+  <meta property="og:type" content="website" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- 🔥 Fireworks Background -->
+  <canvas id="fireworks"></canvas>
+
+  <!-- 🏢 Organization Logo -->
+  <div class="logo-container">
+    <img src="./images/crew_logo.png" alt="Crew Techventure Logo" class="org-logo" />
+
+  </div>
+
+  <!-- 🌸 Decorative Corners -->
+  <img class="corner top-left" src="./images/corner.png" alt="Corner" />
+  <img class="corner top-right" src="./images/corner.png" alt="Corner" />
+  <img class="corner1 bottom-left" src="./images/diya.png" alt="Diya" />
+  <img class="corner1 bottom-right" src="./images/diya.png" alt="Diya" />
+
+  <!-- 🌟 Greeting Section -->
+
+
+  <p class="diwali-wishes"> ✨ “May this Diwali illuminate new beginnings and brighter opportunities for
+    everyone. Wishing you success, happiness, and endless innovation ahead. — Team Crew Tecventure” ✨"</p>
+
+  <div class="section" id="greetingSection">
+    <div id="greeting">
+      <div class="poem-container">
+        <img src="./images/diya.png" alt="Diya" class="poem-image" />
+        <div class="poem">
+          <h1>Happy Diwali</h1>
+          <p>The Festival of Lights</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 💌 Input Section -->
+  <div class="section" id="inputSection">
+    <div class="input-container" id="inputForm">
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <!-- <span>👉 Send it.</span> -->
+      <button onclick="generateWish()"> &#128073; Go </button>
+    </div>
+
+    <div class="share-buttons" id="shareButtons" style="display: none">
+      <a href="#" class="share-btn" id="shareBtn" onclick="shareOnWhatsApp(); return false;">Share on WhatsApp</a>
+      <a href="https://chat.whatsapp.com/DtJSsOKSb0L592l9sMFLyG" class="share-btn join-btn" target="_blank">Join
+        WhatsApp Group</a>
+    </div>
+  </div>
+
+  <!-- 👣 Footer -->
+
+
+  <!-- 🎵 Background Music -->
+  <audio id="bgAudio" autoplay playsinline>
+    <source src="diwali.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

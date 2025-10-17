@@ -1,0 +1,545 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #001f3f, #001233);
+  font-family: 'Roboto', sans-serif;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Style for the organization logo */
+.logo-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+
+/* Updated style for the organization logo */
+.org-logo {
+  width: 250px;
+  /* Increased size */
+  height: auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+/* Style for the Diwali wishes paragraph */
+.diwali-wishes {
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(45deg, #ff9c00, #ff6b6b);
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  line-height: 1.8;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #ff9c00;
+  }
+
+  to {
+    box-shadow: 0 0 20px #ff6b6b;
+  }
+}
+
+@media (max-width: 480px) {
+  .diwali-wishes {
+    margin-top: 100px;
+    /* Add margin to ensure it appears below the logo */
+    text-align: center;
+  }
+
+  .logo-container {
+    position: relative;
+    /* Adjust positioning for mobile view */
+    margin-bottom: 20px;
+    /* Add spacing below the logo */
+  }
+}
+
+h1 {
+  font-size: 2.2em;
+  /* reduced size for less dominance */
+  color: #ffeb99;
+  /* softened shadow: lower blur and spread for subtle glow */
+  text-shadow: 0 01px #ffb347, 0 0 12px #ff9c00;
+  /* slower, gentler glow */
+  /* animation: glow 4s ease-in-out infinite alternate;*/
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 4px #ffb347, 0 0 9px #ff9c00;
+  }
+
+  to {
+    text-shadow: 0 0 10px #ffcf40, 0 0 18px #ffb347;
+  }
+}
+
+span {
+  color: #99ccff;
+  line-height: 1.7;
+  margin: 10px auto;
+}
+
+/* Adjust greeting section */
+.poem-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poem {
+  color: #cce7ff;
+  font-size: 1.2em;
+  margin: 20px auto;
+  line-height: 1.8;
+  max-width: 650px;
+  text-align: center;
+  margin-left: 20px;
+  /* text-align: left; */
+}
+
+.poem h1 {
+  font-size: 2.5em;
+  color: #ffeb99;
+  text-shadow: 0 0 12px #ff9c00;
+}
+
+.poem p {
+  font-size: 1.2em;
+  color: #cce7ff;
+}
+
+.poem-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.poem-image {
+  width: 250px;
+  margin: 0 10px;
+}
+
+.input-container {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Fixed bottom-center input panel */
+#inputForm {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  z-index: 1005;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 12px 16px;
+  border-radius: 12px;
+  display: flex;
+  /* default: row */
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Adjust input and button inside fixed panel */
+#inputForm input[type="text"] {
+  width: 320px;
+  max-width: calc(100vw - 240px);
+  margin: 0;
+  text-align: center;
+  padding: 10px 12px;
+}
+
+#inputForm button {
+  padding: 10px 18px;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  #inputForm {
+    flex-direction: column;
+    width: calc(100% - 32px);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    padding: 10px;
+  }
+
+  #inputForm input[type="text"] {
+    width: 100%;
+
+    max-width: 100%;
+  }
+
+  #inputForm button {
+    width: 100%;
+  }
+}
+
+input[type="text"] {
+  padding: 17px 200px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #004080, #0066cc);
+  color: #fff;
+  text-align: center;
+  width: 90%;
+  max-width: 320px;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: #b3d9ff;
+}
+
+button {
+  padding: 5px 235px;
+  font-size: 1.1em;
+  background: linear-gradient(45deg, #003366, #00509e);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #80d4ff;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.share-buttons {
+  position: fixed;
+
+  transform: translateX(-50%);
+  bottom: 40px;
+  z-index: 1005;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+.share-btn {
+  padding: 10px 20px;
+  background: #004080;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.share-btn:hover {
+  background: #0066cc;
+}
+
+.join-btn {
+  background: #003366;
+}
+
+.join-btn:hover {
+  background: #00509e;
+}
+
+.corner1 {
+  position: absolute;
+  z-index: -1;
+}
+
+.corner {
+  position: fixed;
+  z-index: 10;
+}
+
+.corner,
+.corner1 {
+
+  width: 100px;
+  height: 100px;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 10px gold);
+
+  pointer-events: none;
+}
+
+.corner {
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.cracker {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: #d4cd0a;
+  border-radius: 50%;
+  opacity: 0;
+  animation: burst 3s ease-out infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: inherit;
+  border-radius: 50%;
+  opacity: 0;
+  animation: particleBurst 3s ease-out infinite;
+  transform-origin: center;
+}
+
+@keyframes burst {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes particleBurst {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--angle)) translateY(0) scale(0);
+  }
+
+  10% {
+    opacity: 1;
+    transform: rotate(var(--angle)) translateY(0) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(var(--angle)) translateY(-30px) scale(1);
+  }
+
+  90% {
+    opacity: 0.5;
+    transform: rotate(var(--angle)) translateY(-50px) scale(0.5);
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(var(--angle)) translateY(-60px) scale(0);
+  }
+}
+
+.firework {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 0;
+  animation: firework 2s ease-out infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes firework {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+footer {
+  text-align: center;
+  color: #ffc;
+  font-size: 0.9em;
+  padding: 20px;
+  margin-top: 60px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+footer a {
+  color: #ffd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.3em;
+    margin-bottom: 20px;
+  }
+
+  .corner,
+  .corner1 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  .corner,
+  .corner1 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .section {
+    padding: 30px 10px;
+  }
+
+  input,
+  button {
+    font-size: 1em;
+  }
+
+  .poem-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .poem {
+    margin-left: 0;
+    /* Remove left margin for centering */
+    text-align: center;
+  }
+}
+
+/* Position canvas behind content */
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  /* ensure it stays above background but below diya/corners */
+}
+
+/* Ensure content is above canvas */
+.section,
+footer {
+  position: relative;
+  z-index: 3;
+}
