@@ -136,7 +136,19 @@ window.addEventListener("load", () => {
           <img src="/images/diya.png" alt="Diya" class="poem-image" onerror="this.style.display='none'">
          
           <img src="/images/diya.png" alt="Diya" class="poem-image" onerror="this.style.display='none'">
-        </div>`;
+        </div>
+        <div class="section" id="greetingSection">
+    <div id="greeting">
+      <div class="poem-container">
+        <img src="./images/diya.png" alt="Diya" class="poem-image" />
+        <div class="poem">
+          <h1>Happy Diwali</h1>
+          <p>The Festival of Lights</p>
+        </div>
+      </div>
+    </div>
+  </div>
+`;
 
     // Check if this person is the SENDER (action=share)
     if (action === 'share') {

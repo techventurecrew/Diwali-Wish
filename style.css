@@ -11,10 +11,15 @@ body {
   position: relative;
 }
 
+.greet {
+  /* display: flex; */
+  gap: 1rem;
+}
+
 /* Style for the organization logo */
 .logo-container {
-  position: fixed;
-  top: 20px;
+  /* position: fixed; */
+  top: 10px;
   left: 20px;
   z-index: 1000;
 }
@@ -45,6 +50,8 @@ body {
   font-family: 'Poppins', sans-serif;
   /* Changed to a modern and clean font */
   font-size: 2em;
+  /* position: relative; */
+  /* top: 100px; */
   /* Retained increased font size for better visibility */
   font-weight: bold;
   text-align: center;
@@ -53,6 +60,7 @@ body {
   background: linear-gradient(45deg, #5e1919, #762d2d);
   /* Retained background to match the webpage theme */
   padding: 20px;
+  margin: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
