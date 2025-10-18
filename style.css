@@ -42,16 +42,16 @@ body {
 
 /* Updated style for the Diwali wishes paragraph */
 .diwali-wishes {
-  font-family: 'Great Vibes', cursive;
-  /* Changed to a festive and elegant font */
+  font-family: 'Poppins', sans-serif;
+  /* Changed to a modern and clean font */
   font-size: 2em;
   /* Retained increased font size for better visibility */
   font-weight: bold;
   text-align: center;
   line-height: 1.8;
   color: #fff;
-  background: linear-gradient(45deg, #ffcc00, #ff6600);
-  /* Updated background to match the festive theme */
+  background: linear-gradient(45deg, #5e1919, #762d2d);
+  /* Retained background to match the webpage theme */
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
