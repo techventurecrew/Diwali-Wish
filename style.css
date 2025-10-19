@@ -190,6 +190,8 @@ span {
 
 .input-container {
   margin-top: 20px;
+  padding: 20px 20px;
+  width: 60vw;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -257,6 +259,7 @@ span {
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 2px 8px rgba(255, 107, 107, 0.5);
+  /* margin: 1rem; */
 }
 
 #inputForm button:hover {
@@ -272,16 +275,17 @@ span {
     transform: translateX(-50%);
     bottom: 12px;
     padding: 10px;
+    /* margin: 0px 10px; */
   }
 
   #inputForm input[type="text"] {
-    width: 100%;
+    width: 80%;
 
     max-width: 100%;
   }
 
   #inputForm button {
-    width: 100%;
+    width: 60%;
   }
 }
 
