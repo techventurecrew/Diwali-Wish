@@ -135,7 +135,6 @@ window.addEventListener("load", () => {
         <div class="poem-container">
           <img src="/images/diya.png" alt="Diya" class="poem-image" onerror="this.style.display='none'">
          
-          <img src="/images/diya.png" alt="Diya" class="poem-image" onerror="this.style.display='none'">
         </div>
 
 `;
