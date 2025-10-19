@@ -11,13 +11,6 @@ body {
   position: relative;
 }
 
-.greet {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
 
 /* Style for the organization logo */
 .logo-container {
@@ -289,6 +282,14 @@ span {
 
   #inputForm button {
     width: 60%;
+  }
+
+  .greet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
   }
 }
 
