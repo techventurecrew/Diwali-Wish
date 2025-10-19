@@ -133,7 +133,7 @@ window.addEventListener("load", () => {
     document.getElementById("greeting").innerHTML = `
         <h1>Warm Diwali wishes to you and your family from ${name}!</h1>
         <div class="poem-container">
-          <img src="/images/diya.png" alt="Diya" class="poem-image" onerror="this.style.display='none'">
+          <img src="./images/diya.png" alt="Diya" class="poem-image" onerror="this.style.display='show'">
          
         </div>
 
